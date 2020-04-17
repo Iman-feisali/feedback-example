@@ -1,0 +1,138 @@
+body {
+  background: lightgreen;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  margin-left: 25px;
+}
+
+.table-title {
+  text-align: center;
+  grid-column: 1/7;
+  margin-bottom: 5vh;
+}
+
+label {
+  margin-left: 10px;
+  margin-top: -10px;
+}
+
+.table {
+  width: 75vw;
+  margin: 20px auto;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+table {
+  margin-left: 10px;
+}
+
+tr {
+  background-color: rgb(239, 255, 239);
+}
+
+td {
+  display: table-cell;
+  vertical-align: center;
+}
+
+input {
+  cursor: pointer;
+  margin: 25px;
+  margin-right: 10px;
+}
+
+.custom {
+  display: none;
+}
+
+.long-ans {
+  border: none;
+  background-color: rgb(239, 255, 239);
+  width: 90%;
+  overflow-y: visible;
+  overflow-x: hidden;
+  margin-bottom: 20px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: text;
+  overflow-y: visible;
+  overflow-x: hidden;
+}
+
+footer {
+  color: gray;
+  height: 15vh;
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.tenth {
+  background-color: lightgreen;
+  border: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+button {
+  border: 1px solid rgb(46, 122, 46);
+  border-radius: 10px;
+  width: 20vw;
+  height: 35px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkgreen;
+  cursor: pointer;
+}
+
+.radioContainer {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin: 25px;
+  margin-right: 10px;
+  user-select: none;
+  padding-left: 40px;
+}
+
+.radioContainer .custom-circle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: lightgray;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+}
+
+.radioContainer .custom-circle:hover {
+  background-color: lightgreen;
+}
+
+.radioContainer input:checked + .custom-circle {
+  background-color: darkgreen;
+}
+
+.radioContainer input:checked + .custom-circle:after {
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
